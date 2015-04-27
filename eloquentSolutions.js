@@ -20,7 +20,21 @@ console.log(reducedArray);
 
 //Historical Life Expectancy:
 
+var guys = [{name: "Kevin", died: 1920}, {name: "William", died: 1850}];
 
+var diedIn = function(array) {
+
+  for (i = 0; i < array.length; i++) {
+    array[i].century = Math.ceil(array[i].died / 100)
+    console.log(array[i].century);
+  };
+};
+
+diedIn(guys);
+
+console.log(guys[1].century);
+
+//this adds the century to the object. I need to refer to the composability section next to filter by century and map ages. I don't think this will get me all the way there yet though.
 
 //Every and Then Some:
 
